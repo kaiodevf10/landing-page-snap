@@ -1,0 +1,165 @@
+@media (max-width: 1400px) {
+	.hero {
+		padding: 40px;
+	}
+
+	.hero .informacoes h1 {
+		font-size: 5.5rem;
+	}
+}
+
+@media (max-width: 1024px) {
+	.cabecalho {
+		position: relative;
+	}
+
+	.navegacao {
+		display: flex;
+		flex-direction: column;
+		background-color: white;
+		position: fixed;
+		right: 0;
+		top: 0;
+		transform: translatex(240px);
+		min-height: 100vh;
+		max-width: 240px;
+		padding: 25px;
+		gap: 16px;
+		transition: transform .5s ease-in-out;
+	}
+
+
+	.navegacao.aberto {
+		transform: translatex(0);
+	}
+
+	.navegacao .menu {
+		flex-direction: column;
+		align-items: start;
+		margin-top: 35px;
+	}
+
+	.cabecalho .navegacao .menu-close {
+		display: flex;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		max-width: 24px;
+		margin: 10px;
+	}
+
+	.cabecalho .menu-hamburguer {
+		display: flex;
+	}
+
+	/*
+
+    .cabecalho .menu {
+        display: none;
+        align-items: normal;
+    }
+
+    .cabecalho .user-liks {
+        display: none;
+    }
+
+    .cabecalho .menu-hamburguer {
+        display: block;
+    }
+
+    .cabecalho .menu.ativo {
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        position: absolute;
+        right: 0;
+        top: 0;
+        min-height: 100vh;
+        width: 240px;
+        padding: 25px;
+    }
+
+    .cabecalho .menu.ativo .menu-close {
+        
+        align-self: flex-end;
+    }
+
+    /* .cabecalho .menu.ativo .user-liks {
+        display: block;
+        flex-direction: column;
+    } */
+
+	.cabecalho .menu.ativo .submenu {
+		position: inherit;
+		padding: 0;
+		margin-top: 24px;
+	}
+
+	.cabecalho .menu.ativo .submenu.features {
+		left: 0;
+	}
+
+	.hero {
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+
+	.hero .informacoes {
+		width: auto;
+	}
+
+	.hero .informacoes h1 {
+		font-size: 4rem;
+	}
+
+	.hero picture {
+		width: 100%;
+	}
+
+	.hero .sponsors {
+		gap: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero {
+		margin-left: 100px;
+	}
+}
+
+@media (max-width: 500px) {
+	.hero {
+		padding: 0;
+		margin: 0;
+		gap: 48px;
+	}
+
+	.hero .informacoes {
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.hero .informacoes h1 {
+		font-size: 36px;
+	}
+
+	.hero .informacoes p {
+		font-size: 16px;
+		max-width: 343px;
+		margin: 0 50px;
+		margin-bottom: 24px;
+	}
+
+	.hero .botao {
+		margin-bottom: 48px;
+	}
+
+	.hero .sponsors {
+		gap: 8px;
+		padding: 15px;
+	}
+
+	.hero .sponsors img {
+		width: 80px;
+	}
+}
