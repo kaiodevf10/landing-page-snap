@@ -1,158 +1,155 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
 }
 
-/* cabeçalho desktop */
+/* =====================
+   Cabeçalho (Desktop)
+===================== */
 
 .cabecalho {
-	display: flex;
-	justify-content: space-between;
-	margin-inline: auto;
-	align-items: center;
-	padding: 20px;
-	gap: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  padding: 20px;
+  margin-inline: auto;
 }
 
 .cabecalho .navegacao {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .cabecalho .navegacao .menu-close {
-	display: none;
+  display: none;
 }
 
 .cabecalho .menu-hamburguer {
-	display: none;
+  display: none;
 }
 
 .logo-menu .logo {
-	display: flex;
-	align-items: center;
-	margin-left: 25px;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
 }
 
 .logo-menu .navegacao {
-	display: flex;
-	align-items: center;
-	gap: 60px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
-.cabecalho .menu {
-	display: flex;
+.cabecalho .menu-principal {
+  display: flex;
 }
 
-.cabecalho .menu li a {
-	font-size: 1.5rem;
-	color: var(--primary-medium);
-	margin: 10px;
-	font-weight: 500;
+.cabecalho .menu-principal li a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--primary-medium);
+  margin: 10px;
+  transition: 0.3s ease-in-out;
 }
 
-.cabecalho .menu li a:hover {
-	color: var(--primary-dark);
+.cabecalho .menu-principal li a:hover {
+  color: var(--primary-dark);
 }
 
-.cabecalho .menu li a:hover img {
-	transform: rotate(180deg);
+.cabecalho .menu-principal li a:hover img {
+  transform: rotate(180deg);
 }
 
 .cabecalho .user-liks {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cabecalho .user-liks button {
-	color: var(--primary-medium);
-	font-size: 1.5rem;
-	font-weight: 500;
-	margin: 10px;
-	padding: 13px 22px;
-	border-radius: 14px;
-	transition: 0.3s ease-in-out;
-	border: 1px solid transparent;
-	background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--primary-medium);
+  padding: 13px 22px;
+  margin: 10px;
+  border-radius: 14px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: 0.3s ease-in-out;
 }
 
 .cabecalho .user-liks .btn-Register {
-	border: 1px solid black;
+  border: 1px solid black;
 }
 
-/* hero */
+/* =====================
+        Hero
+===================== */
 
 .hero {
-	display: flex;
-	align-items: center;
-	max-width: 1280px;
-	margin-inline: auto;
-	gap: 120px;
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  max-width: 1280px;
+  margin-inline: auto;
 }
 
 .hero .informacoes {
-	width: 50%;
+  width: 50%;
 }
 
 .hero .informacoes h1 {
-	font-size: 8.2rem;
-	color: var(--primary-dark);
-	margin-bottom: 30px;
+  font-size: 8.2rem;
+  color: var(--primary-dark);
+  margin-bottom: 30px;
 }
 
 .hero .informacoes p {
-	color: var(--primary-medium);
-	margin-bottom: 51px;
-	font-size: 20px;
-	max-width: 460px;
-	line-height: 28px;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  max-width: 460px;
+  color: var(--primary-medium);
+  margin-bottom: 51px;
 }
 
 .hero .botao {
-	border: none;
-	background: #151515;
-	font-size: 1.8rem;
-	color: #fff;
-	border-radius: 15px;
-	padding-top: 15px;
-	padding-bottom: 13px;
-	padding-right: 28px;
-	padding-left: 31px;
-	margin-bottom: 80px;
-	border: 1px solid transparent;
-	transition: 0.3s ease-in-out;
+  background: #151515;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 15px 28px 13px 31px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  margin-bottom: 80px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 .hero .botao:hover {
-	background: #fff;
-	color: #151515;
-	border: 1px solid black;
+  background: #fff;
+  color: #151515;
+  border: 1px solid black;
 }
 
 .hero .sponsors {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hero .sponsors img {
-	object-fit: contain;
+  object-fit: contain;
 }
 
-/* .hero picture {
-    width: 30%;
-}
-
-.hero picture img {
-    width: 100%;
-    height: 100%;
-} */
+/* =====================
+      Imagem Hero
+===================== */
 
 picture {
-	width: 50%;
+  width: 50%;
+}
 
-	img {
-		max-width: 100%;
-	}
+picture img {
+  max-width: 100%;
 }

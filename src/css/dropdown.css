@@ -1,12 +1,18 @@
-.menu {
-  gap: 3rem; 
+/* ===========================
+   MENU PRINCIPAL (DROPDOWN)
+=========================== */
+
+.menu-principal {
+  gap: 3rem;
   align-items: center;
 }
 
+/* Container do dropdown */
 .dropdown {
   position: relative;
 }
 
+/* Link principal do dropdown */
 .dropdown > a {
   display: flex;
   align-items: center;
@@ -15,34 +21,39 @@
   gap: 0.9rem;
 }
 
-.submenu {
+/* Submenu padrão (oculto) */
+.sub-menu {
   display: none;
   position: absolute;
   flex-direction: column;
   left: 0;
   background-color: #fff;
   border-radius: 0.6rem;
-  padding: 0.60rem 0.8rem;
+  padding: 0.6rem 0.8rem;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   z-index: 10;
   max-width: 190px;
 }
 
-.submenu.features {
+/* Ajuste de posição para submenu com classe 'features' */
+.sub-menu.features {
   left: -35px;
 }
 
-.dropdown:hover .submenu {
+/* Mostrar submenu ao passar o mouse */
+.dropdown:hover .sub-menu {
   display: flex;
 }
 
-.submenu li a {
+/* Estilo dos links dentro do submenu */
+.sub-menu li a {
   display: flex;
   gap: 0.6rem;
   font-size: 0.875rem;
 }
 
-.submenu img {
+/* Ícones dentro do submenu */
+.sub-menu img {
   width: 15px;
   height: 15px;
 }

@@ -1,3 +1,6 @@
+/* RESPONSIVO */
+
+/* Até 1400px */
 @media (max-width: 1400px) {
 	.hero {
 		padding: 40px;
@@ -8,11 +11,14 @@
 	}
 }
 
+/* Até 1024px - Tablets */
 @media (max-width: 1024px) {
+	/* Cabeçalho com menu mobile */
 	.cabecalho {
 		position: relative;
 	}
 
+	/* Menu lateral (oculto por padrão) */
 	.navegacao {
 		display: flex;
 		flex-direction: column;
@@ -20,25 +26,26 @@
 		position: fixed;
 		right: 0;
 		top: 0;
-		transform: translatex(240px);
+		transform: translateX(240px);
 		min-height: 100vh;
 		max-width: 240px;
 		padding: 25px;
 		gap: 16px;
-		transition: transform .5s ease-in-out;
+		transition: transform 0.5s ease-in-out;
 	}
-
 
 	.navegacao.aberto {
-		transform: translatex(0);
+		transform: translateX(0);
 	}
 
-	.navegacao .menu {
+	/* Menu principal vertical */
+	.navegacao .menu-principal {
 		flex-direction: column;
-		align-items: start;
+		align-items: flex-start;
 		margin-top: 35px;
 	}
 
+	/* Ícone de fechar menu */
 	.cabecalho .navegacao .menu-close {
 		display: flex;
 		position: absolute;
@@ -48,57 +55,23 @@
 		margin: 10px;
 	}
 
+	/* Ícone de abrir menu */
 	.cabecalho .menu-hamburguer {
 		display: flex;
 	}
 
-	/*
-
-    .cabecalho .menu {
-        display: none;
-        align-items: normal;
-    }
-
-    .cabecalho .user-liks {
-        display: none;
-    }
-
-    .cabecalho .menu-hamburguer {
-        display: block;
-    }
-
-    .cabecalho .menu.ativo {
-        display: flex;
-        flex-direction: column;
-        background-color: red;
-        position: absolute;
-        right: 0;
-        top: 0;
-        min-height: 100vh;
-        width: 240px;
-        padding: 25px;
-    }
-
-    .cabecalho .menu.ativo .menu-close {
-        
-        align-self: flex-end;
-    }
-
-    /* .cabecalho .menu.ativo .user-liks {
-        display: block;
-        flex-direction: column;
-    } */
-
-	.cabecalho .menu.ativo .submenu {
+	/* Submenu no modo ativo */
+	.cabecalho .menu-principal.ativo .sub-menu {
 		position: inherit;
 		padding: 0;
 		margin-top: 24px;
 	}
 
-	.cabecalho .menu.ativo .submenu.features {
+	.cabecalho .menu-principal.ativo .sub-menu.features {
 		left: 0;
 	}
 
+	/* Hero adaptado */
 	.hero {
 		flex-wrap: wrap-reverse;
 		justify-content: center;
@@ -121,12 +94,14 @@
 	}
 }
 
+/* Até 768px - Celulares grandes */
 @media (max-width: 768px) {
 	.hero {
 		margin-left: 100px;
 	}
 }
 
+/* Até 500px - Celulares pequenos */
 @media (max-width: 500px) {
 	.hero {
 		padding: 0;
@@ -140,14 +115,13 @@
 	}
 
 	.hero .informacoes h1 {
-		font-size: 36px;
+		font-size: 3.6rem;
 	}
 
 	.hero .informacoes p {
-		font-size: 16px;
+		font-size: 1.6rem;
 		max-width: 343px;
-		margin: 0 50px;
-		margin-bottom: 24px;
+		margin: 0 50px 24px 50px;
 	}
 
 	.hero .botao {

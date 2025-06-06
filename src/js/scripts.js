@@ -8,11 +8,3 @@ remove.addEventListener("click", toggleMenu);
 function toggleMenu() {
 	nav.classList.toggle("aberto");
 }
-
-// function abrirMenu() {
-// 	nav.classList.add("aberto");
-// }
-
-// function fecharMenu() {
-// 	nav.classList.remove("aberto");
-// }

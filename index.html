@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Landing page snap">
   <title>Landing page Snap</title>
   <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/style.css">
   <link rel="stylesheet" href="./src/css/dropdown.css">
@@ -16,48 +19,38 @@
 
 <body>
   <header class="cabecalho">
-
     <a href="#">
       <img src="./src/images/logo.svg" alt="logo snap" class="logo">
     </a>
 
     <nav class="navegacao" id="navegacao">
-
       <img src="./src/images/icon-close-menu.svg" alt="close menu" class="menu-close" id="remove">
 
-      <ul class="menu ativo">
+      <ul class="menu-principal ativo">
         <li class="dropdown">
           <a href="#">
             Features
             <img src="./src/images/icon-arrow-down.svg" alt="setinha">
           </a>
-
-          <ul class="submenu features">
+          <ul class="sub-menu features">
             <li>
               <a href="#">
-                <img src="./src/images/icon-todo.svg" alt="lista">
-                Todo List
+                <img src="./src/images/icon-todo.svg" alt="lista"> Todo List
               </a>
             </li>
-
             <li>
               <a href="#">
-                <img src="./src/images/icon-calendar.svg" alt="calendario">
-                Calendar
+                <img src="./src/images/icon-calendar.svg" alt="calendario"> Calendar
               </a>
             </li>
-
             <li>
               <a href="#">
-                <img src="./src/images/icon-reminders.svg" alt="reminders">
-                Reminders
+                <img src="./src/images/icon-reminders.svg" alt="reminders"> Reminders
               </a>
             </li>
-
             <li>
               <a href="#">
-                <img src="./src/images/icon-planning.svg" alt="planning">
-                Planning
+                <img src="./src/images/icon-planning.svg" alt="planning"> Planning
               </a>
             </li>
           </ul>
@@ -68,30 +61,14 @@
             Company
             <img src="./src/images/icon-arrow-down.svg" alt="setinha">
           </a>
-
-          <ul class="submenu">
-            <li>
-              <a href="#">
-                History
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                Our Team
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                Blog
-              </a>
-            </li>
+          <ul class="sub-menu">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
           </ul>
         </li>
 
         <li><a href="#">Careers</a></li>
-
         <li><a href="#">About</a></li>
       </ul>
 
@@ -101,27 +78,25 @@
       </div>
     </nav>
 
-    <img src="./src/images/icon-menu.svg" alt="" class="menu-hamburguer" id="menu-hamburguer">
+    <img src="./src/images/icon-menu.svg" alt="menu hamburguer" class="menu-hamburguer" id="menu-hamburguer">
   </header>
 
   <main>
     <section class="hero">
       <div class="informacoes">
         <h1>Make remote work</h1>
-        <p>Get your team in sync, no matter your location. Streamline processes, create team rituais, and watch
-          productivity soar.</p>
-
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituais, and watch productivity soar.
+        </p>
         <a href="#">
           <button class="botao">Learn more</button>
         </a>
 
         <div class="sponsors">
           <img src="./src/images/client-databiz.svg" alt="client-databiz">
-
           <img src="./src/images/client-audiophile.svg" alt="client-audiophile">
-
           <img src="./src/images/client-meet.svg" alt="client-meet">
-
           <img src="./src/images/client-maker.svg" alt="client-maker">
         </div>
       </div>
